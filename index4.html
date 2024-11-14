@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Solicitação</title>
+    <style>
+        /* Definindo o layout e cores do tema */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9; /* Cor de fundo suave */
+            color: #333; /* Cor do texto */
+        }
+
+        header {
+            background-color: #00ffff; /* Azul claro */
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        /* Menu de navegação */
+        #menu1 {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #343a40;
+            text-align: center;
+        }
+
+        #menu1 li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        #menu1 li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+            font-size: 16px;
+        }
+
+        #menu1 li a:hover {
+            background-color: #00ffff; /* Efeito de hover */
+            border-radius: 5px;
+        }
+
+        /* Tabela */
+        table {
+            width: 80%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #00ff40;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #00ff40;
+        }
+
+        /* Statuses */
+        .status-pendente {
+            background-color: #00ff40;
+            color: black;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .status-concluida {
+            background-color: #00ff40;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .status-andamento {
+            background-color: #00ff40;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* Botões */
+        #adicionar {
+            margin: 20px;
+            text-align: center;
+        }
+
+        #adicionar button {
+            background-color: #6646f7;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        #adicionar button:hover {
+            background-color: #6646f7;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #6646f7;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Histórico de Solicitação</h1>
+    </header>
+
+    <main>
+        <!-- Novo Menu de navegação -->
+        <ul id="menu1">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Chamados</a></li>
+            <li><a href="#">Solicitação</a></li>
+        </ul>
+
+        <!-- Adicionar Novo Item -->
+        <div id="adicionar">
+            <button>Nova Solicitação</button>
+            <button>Acompanhamento</button>
+        </div>
+
+        <!-- Tabela de Histórico de Solicitações -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Status</th>
+                    <th>Problema</th>
+                    <th>Ticket</th>
+                    <th>Usuário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Solicitação 1 -->
+                <tr>
+                    <td class="status-pendente">Pendente</td>
+                    <td>PC-0037: Tela Azul ao Iniciar</td>
+                    <td>#1553</td>
+                    <td>Marcos Pereira</td>
+                </tr>
+
+                <!-- Solicitação 2 -->
+                <tr>
+                    <td class="status-concluida">Concluída</td>
+                    <td>PC-0142: Conexão de Rede</td>
+                    <td>#1572</td>
+                    <td>Ana Clara Souza</td>
+                </tr>
+
+                <!-- Solicitação 3 -->
+                <tr>
+                    <td class="status-andamento">Em Andamento</td>
+                    <td>PC-0109: Teclado Não Funciona</td>
+                    <td>#1584</td>
+                    <td>José Augusto Lima</td>
+                </tr>
+
+                <!-- Solicitação 4 -->
+                <tr>
+                    <td class="status-pendente">Pendente</td>
+                    <td>PC-0055: Problema de Impressora</td>
+                    <td>#1601</td>
+                    <td>Juliana Costa</td>
+                </tr>
+
+                <!-- Solicitação 5 -->
+                <tr>
+                    <td class="status-concluida">Concluída</td>
+                    <td>PC-0221: Erro de Software</td>
+                    <td>#1623</td>
+                    <td>Roberto Silva</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        Desenvolvido por Andrey Vinicius - <a href="https://github.com/lucaswokf/TrabalhodeTI" target="_blank">Repositório</a></p>
+    </footer>
+</body>
+</html>
